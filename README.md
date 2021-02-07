@@ -7,6 +7,7 @@
 
 2. Products Page
 * Product Sections/Types
+* Product_name
 * price
 * availability
 * description
