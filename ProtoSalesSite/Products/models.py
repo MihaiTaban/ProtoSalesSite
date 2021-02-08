@@ -7,21 +7,21 @@ class ProductSectionsDB(models.Model):
 
 class SkiDB(models.Model):
     Brand = models.CharField(max_length=200)
-    Size = models.IntegerField(200)
-    Availability = models.IntegerField(200)
+    Size = models.IntegerField()
+    Availability = models.IntegerField()
 
 class SnowboardDB(models.Model):
     Brand = models.CharField(max_length=200)
-    Size = models.IntegerField(200)
-    Availability = models.IntegerField(200)
+    Size = models.IntegerField()
+    Availability = models.IntegerField()
 
 class SkiBootsDB(models.Model):
     Brand = models.CharField(max_length=200)
-    Size = models.IntegerField(200)
-    Availability = models.IntegerField(200)
+    Size = models.IntegerField()
+    Availability = models.IntegerField()
 
 class SnowboardBootsDB(models.Model):
     Brand = models.CharField(max_length=200)
-    Size = models.IntegerField(200)
-    Availability = models.IntegerField(200)
+    Size = models.IntegerField()
+    Availability = models.IntegerField()
 
