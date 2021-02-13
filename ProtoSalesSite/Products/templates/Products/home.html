@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Page</title>
+</head>
+<body>
+<h1>Salut!</h1>
+
+<table style="width:50%">
+
+    <tr>
+        {% for prod in ProductSections %}
+        <th>
+        {{ prod }}
+        </th>
+        {% endfor %}
+    </tr>
+
+</table>
+</body>
+</html>

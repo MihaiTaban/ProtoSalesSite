@@ -4,6 +4,8 @@ from django.db import models
 
 class ProductSectionsDB(models.Model):
     Sections = models.CharField(max_length=200)
+    def __str__(self):
+        return self.Sections
 
 class SkiDB(models.Model):
     Brand = models.CharField(max_length=200)
@@ -24,4 +26,7 @@ class SnowboardBootsDB(models.Model):
     Brand = models.CharField(max_length=200)
     Size = models.IntegerField()
     Availability = models.IntegerField()
+
+
+
 
