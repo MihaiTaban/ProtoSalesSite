@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form method="POST">
+    {% csrf_token %}
+        {{form.as_p}}
+        <button class="btn" style="background-color:grey; color:blue" type="submit">register</button>
+    </form>
+    <p>Daca nu aveti deja un cont, <a href="/register"><strong>register</strong></a></p>
+</body>
+</html>
