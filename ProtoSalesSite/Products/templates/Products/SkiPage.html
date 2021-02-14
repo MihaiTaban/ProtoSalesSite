@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ski Page</title>
+</head>
+<body>
+<h1>Hai sa vedem modelele de skiuri!</h1>
+
+<table border = 1>
+    <thead>
+
+    <th>
+        Brand
+    </th>
+
+    <th>
+        Size
+    </th>
+
+    <th>
+        Availabilty
+    </th>
+
+    </thead>
+<tbody >
+
+        {% for ski in data %}
+<tr>
+            {% for key,prod in ski.items %}
+
+
+
+            <td>
+            {{ prod }}
+            </td>
+
+
+
+
+            {% endfor %}
+</tr>
+        {% endfor %}
+
+</tbody>
+
+
+
+
+
+</table>
+
+
+
+</body>
+</html>

@@ -12,15 +12,30 @@
 
     <tr>
         {% for prod in ProductSections %}
+
             <th>
-            {{ prod }}
-            </th>
+
+
+            {% if "Ski" %}
+                <a href="{% url 'Products:SkiPage' %}">{{prod}}</a>
+
+            {% elif "Snowboards" %}
+                <a href="{% url 'Products:SnowboardsPage' %}">{{prod}}</a>
+
+            {% elif "SnowboardBoots" %}
+                <a href="{% url 'Products:SnowboardBootsPage' %}">{{prod}}</a>
+
+            {% else %}
+                <a href="{% url 'Products:SkiBootsPage' %}">{{prod}}</a>
+            {% endif %}
+                </th>
         {% endfor %}
     </tr>
+
 
 </table>
     </div>
 
-<p><button onclick="window.location.href='http://127.0.0.1:8000/Products/welcome/';">Logout</button></p>
+<p><a href= "{% url 'Products:logout' %}">Log Out</a></p>
 </body>
 </html>

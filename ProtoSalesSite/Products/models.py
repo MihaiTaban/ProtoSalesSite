@@ -8,9 +8,12 @@ class ProductSectionsDB(models.Model):
         return self.Sections
 
 class SkiDB(models.Model):
-    Brand = models.CharField(max_length=200)
+    Brand = models.CharField(max_length=200, default='')
     Size = models.IntegerField()
-    Availability = models.IntegerField()
+    Availability = models.IntegerField(default=1)
+
+
+
 
 class SnowboardDB(models.Model):
     Brand = models.CharField(max_length=200)
