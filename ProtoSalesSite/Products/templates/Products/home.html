@@ -16,13 +16,13 @@
             <th>
 
 
-            {% if "Ski" %}
+            {% if prod.Sections ==  "Ski" %}
                 <a href="{% url 'Products:SkiPage' %}">{{prod}}</a>
 
-            {% elif "Snowboards" %}
+            {% elif prod.Sections == "Snowboards" %}
                 <a href="{% url 'Products:SnowboardsPage' %}">{{prod}}</a>
 
-            {% elif "SnowboardBoots" %}
+            {% elif prod.Sections == "SnowboardBoots" %}
                 <a href="{% url 'Products:SnowboardBootsPage' %}">{{prod}}</a>
 
             {% else %}
