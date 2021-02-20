@@ -1,10 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Ski Page</title>
-</head>
-<body>
+{% extends "Products/base.html" %}
+{% block content %}
 <h1>Hai sa vedem modelele de ski boots!</h1>
 
 <table border = 1>
@@ -52,5 +47,4 @@
 
 <p><button onclick="window.location.href='http://127.0.0.1:8000/Products';"><strong>Back to main page</strong></button></p>
 
-</body>
-</html>
+{% endblock %}

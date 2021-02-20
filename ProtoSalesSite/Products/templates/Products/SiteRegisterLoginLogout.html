@@ -1,10 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Product Page</title>
-</head>
-<body>
+{% extends "Products/base.html" %}
+{% block content %}
 <h1>Bine ati venit! Haideti sa ne si autentificam!</h1>
 
 <div>
@@ -25,5 +20,41 @@
 <p><button onclick="window.location.href='http://127.0.0.1:8000/Products/register/';">Register Page</button></p>
 <h4>Daca ai deja un cont:</h4>
 <p><button onclick="window.location.href='http://127.0.0.1:8000/Products/login/';">Login Page</button></p>
-</body>
-</html>
+{% endblock %}
+
+
+
+
+
+
+
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Product Page</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<h1>Bine ati venit! Haideti sa ne si autentificam!</h1>-->
+
+<!--<div>-->
+<!--<table style="width:50%">-->
+
+<!--    <tr>-->
+<!--        {% for prod in ProductSections %}-->
+<!--            <th>-->
+<!--            {{ prod }}-->
+<!--            </th>-->
+<!--        {% endfor %}-->
+<!--    </tr>-->
+
+<!--</table>-->
+<!--    </div>-->
+
+<!--<h4>Daca nu ai cont du-te la:</h4>-->
+<!--<p><button onclick="window.location.href='http://127.0.0.1:8000/Products/register/';">Register Page</button></p>-->
+<!--<h4>Daca ai deja un cont:</h4>-->
+<!--<p><button onclick="window.location.href='http://127.0.0.1:8000/Products/login/';">Login Page</button></p>-->
+<!--</body>-->
+<!--</html>-->
