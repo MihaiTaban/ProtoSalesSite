@@ -1,0 +1,55 @@
+{% extends "Products/base.html" %}
+{% block content %}
+
+
+
+    <div class="container">
+    <div class="row">
+      <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+        <div class="card card-signin my-5">
+          <div class="card-body">
+            <h5 class="card-title text-center">register</h5>
+   <form method="post">
+            {% csrf_token %}
+          <div class="form-group">
+            <label for="exampleInputEmail1">Username</label>
+            <input name="username" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter username">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your username with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input name="password1" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          </div>
+       <div class="form-group">
+            <label for="exampleInputPassword2">Password confirmation</label>
+            <input name="password2" type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
+          </div>
+    <!--      <div class="form-group form-check">-->
+    <!--        <input type="checkbox" class="form-check-input" id="exampleCheck1">-->
+    <!--        <label class="form-check-label" for="exampleCheck1">Check me out</label>-->
+    <!--      </div>-->
+          <button type="submit" class="btn btn-primary">Submit</button>
+       <a class="btn btn-primary" href="{% url 'Products:welcome' %}" role="button">Back to homepage</a>
+        </form>
+ </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+<!--    <form method="POST">-->
+<!--    {% csrf_token %}-->
+<!--        {{form.as_p}}-->
+<!--        <a class="btn btn-primary"  color:white type="submit" role="button">register</a>-->
+<!--&lt;!&ndash;        <button class="btn" style="background-color:grey; color:blue" type="submit">register</button>&ndash;&gt;-->
+<!--    </form>-->
+<!--&lt;!&ndash;    <p>Daca nu aveti deja un cont, <a href="/register"><strong>register</strong></a></p>&ndash;&gt;-->
+<!--<p></p>-->
+<!--<p>Altfel:</p>-->
+<!--<p>-->
+<!--<a class="btn btn-primary" href="{% url 'Products:welcome' %}" role="button">Back to homepage</a>-->
+<!--</p>-->
+{% endblock %}

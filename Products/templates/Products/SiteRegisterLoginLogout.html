@@ -1,0 +1,71 @@
+{% extends "Products/base.html" %}
+{% block content %}
+<h1>Bine ati venit! Haideti sa ne si autentificam!</h1>
+
+<div>
+<table style="width:50%">
+
+    <tr>
+        {% for prod in ProductSections %}
+            <th>
+            {{ prod }}
+            </th>
+        {% endfor %}
+    </tr>
+
+</table>
+    </div>
+
+<!--<h4>Daca nu ai cont du-te la:</h4>-->
+<!--<p><button onclick="window.location.href='http://127.0.0.1:8000/Products/register/';">Register Page</button></p>-->
+<!--<h4>Daca ai deja un cont:</h4>-->
+<!--<p><button onclick="window.location.href='http://127.0.0.1:8000/Products/login/';">Login Page</button></p>-->
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="window.location.href='http://127.0.0.1:8000/Products/register/';">Register Page</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+<div style="background-image: url('img_girl.jpg'); background-repeat: no-repeat; background-attachment: fixed;  background-size: cover;">
+</div>
+{% endblock %}
+
+
+
+
+
+
+
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Product Page</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<h1>Bine ati venit! Haideti sa ne si autentificam!</h1>-->
+
+<!--<div>-->
+<!--<table style="width:50%">-->
+
+<!--    <tr>-->
+<!--        {% for prod in ProductSections %}-->
+<!--            <th>-->
+<!--            {{ prod }}-->
+<!--            </th>-->
+<!--        {% endfor %}-->
+<!--    </tr>-->
+
+<!--</table>-->
+<!--    </div>-->
+
+<!--<h4>Daca nu ai cont du-te la:</h4>-->
+<!--<p><button onclick="window.location.href='http://127.0.0.1:8000/Products/register/';">Register Page</button></p>-->
+<!--<h4>Daca ai deja un cont:</h4>-->
+<!--<p><button onclick="window.location.href='http://127.0.0.1:8000/Products/login/';">Login Page</button></p>-->
+<!--</body>-->
+<!--</html>-->
