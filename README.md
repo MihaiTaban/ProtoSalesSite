@@ -14,9 +14,7 @@
 
 3. Users
 * account
-* purchase basket
-* orders
-    * orders tracking and timing
+
 
 
 
